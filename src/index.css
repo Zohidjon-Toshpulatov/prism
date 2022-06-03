@@ -1,13 +1,139 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'WildWorld';
+  src: local(WildWorld), url(./assets/wild-world.otf) format('truetype');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'WildWorld', serif;
+}
+
+.main{
+  width: 100%;
+  height: 100vh;
+}
+
+#myVideo{
+  display: none;
+}
+
+#myMb{
+  position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+ .content {
+   position: absolute;
+   /* padding: 80px 0 0 90px; */
+   width: 90%;
+   /* height: 100%; */
+   top: 80px;
+   left: 90px;
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: flex-start;
+ }
+
+ .content h1 {
+   font-weight: 500;
+   font-size: 48px;
+   line-height: 48px;
+   text-transform: uppercase;
+
+ }
+
+ .content p {
+   font-size: 12px;
+   margin: 12px 0;
+   font-family: 400;
+ }
+
+ .content a {
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+ }
+
+ .content span {
+   font-weight: 700;
+   color: black;
+   font-size: 16px;
+   line-height: 16px;
+ }
+
+ .content .bullet {
+   margin-right: 5px;
+   width: 16px;
+   height: 16px;
+   display: block;
+   /* padding: 0px 4px; */
+   border-radius: 50%;
+   background-color: #D64242;
+ }
+
+@media screen and (min-width: 600px) {
+  #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+  
+    .content {
+      position: absolute;
+      /* padding: 80px 0 0 90px; */
+      width: 90%;
+      /* height: 100%; */
+      top: 50px;
+      left: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: flex-start;
+    }
+  
+    .content h1 {
+      font-weight: 500;
+      font-size: 90px;
+      line-height: 90px;
+      text-transform: uppercase;
+  
+    }
+  
+    .content p {
+      font-size: 16px;
+      margin: 16px 0;
+      font-family: 400;
+    }
+  
+    .content a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+  
+    .content span {
+      font-weight: 700;
+      color: black;
+      font-size: 16px;
+      line-height: 16px;
+    }
+  
+    .content .bullet {
+      margin-right: 5px;
+      width: 16px;
+      height: 16px;
+      display: block;
+      /* padding: 0px 4px; */
+      border-radius: 50%;
+      background-color: #D64242;
+    }
 }
